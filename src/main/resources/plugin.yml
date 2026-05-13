@@ -1,0 +1,27 @@
+name: QuickTemplate
+version: ${project.version}
+main: com.quicktemplate.QuickTemplate
+api-version: '1.20'
+author: QuickPlugins
+description: Template plugin — copy this to start a new QuickPlugin.
+softdepend: [PlaceholderAPI]
+folia-supported: false
+
+commands:
+  quicktemplate:
+    description: Main command
+    aliases: [qt]
+    usage: /qt help
+    permission: quicktemplate.admin
+
+permissions:
+  quicktemplate.*:
+    description: All permissions
+    default: op
+    children:
+      quicktemplate.admin: true
+      quicktemplate.use: true
+  quicktemplate.admin:
+    default: op
+  quicktemplate.use:
+    default: true

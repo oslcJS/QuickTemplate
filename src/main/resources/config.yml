@@ -1,0 +1,5 @@
+messages:
+  prefix: "&9[QuickTemplate] &r"
+  no-permission: "&cYou don't have permission."
+  player-only: "&cOnly players can use this command."
+  reloaded: "&aConfig reloaded."
