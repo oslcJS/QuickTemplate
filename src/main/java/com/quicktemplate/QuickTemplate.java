@@ -33,6 +33,9 @@ public final class QuickTemplate extends JavaPlugin {
             }
             Msg.send(sender, "&7Usage: /qt reload");
             return true;
+        }, (sender, command, label, args) -> {
+            if (args.length == 1) return java.util.List.of("reload");
+            return java.util.List.of();
         });
 
         getLogger().info("QuickTemplate enabled. Server: " + Bukkit.getBukkitVersion());
@@ -43,11 +46,11 @@ public final class QuickTemplate extends JavaPlugin {
         QuickLink.unregister();
     }
 
-    private void registerCommand(String name, org.bukkit.command.CommandExecutor executor) {
+    private void registerCommand(String name, org.bukkit.command.CommandExecutor executor, org.bukkit.command.TabCompleter tabCompleter) {
         PluginCommand cmd = getCommand(name);
         if (cmd != null) {
             cmd.setExecutor(executor);
-            if (executor instanceof TabCompleter tc) cmd.setTabCompleter(tc);
+            if (tabCompleter != null) cmd.setTabCompleter(tabCompleter);
         }
     }
 
