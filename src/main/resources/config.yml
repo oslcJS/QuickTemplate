@@ -1,3 +1,14 @@
+# -----------------------------------------------------------------------
+#
+# dP"Yb  88   88 88  dP""b8 88  dP 888888 888888 8b    d8 88""Yb 88        db    888888 888888
+# dP   Yb 88   88 88 dP   `" 88odP    88   88__   88b  d88 88__dP 88       dPYb     88   88__
+# Yb b dP Y8   8P 88 Yb      88"Yb    88   88""   88YbdP88 88"""  88  .o  dP__Yb    88   88""
+#  `"YoYo `YbodP' 88  YboodP 88  Yb   88   888888 88 YY 88 88     88ood8 dP""""Yb   88   888888
+#
+# QuickTemplate Config
+# Version: 1.0.0
+# -----------------------------------------------------------------------
+
 messages:
   prefix: "&9[QuickTemplate] &r"
   no-permission: "&cYou don't have permission."
